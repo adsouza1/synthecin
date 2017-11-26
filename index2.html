@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    
+    <title>Athelas</title>
+    
+    <meta name="description" content="In-home blood diagnostic">
+    <meta name="keywords" content="diagnostic, blood, in-home">
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/demo.css">
+    <!--Start [ Facebook Pixel Code ]-->
+    <script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '177526572708600'); 
+		fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" alt="Facebook Pixel Code" src="https://www.facebook.com/tr?id=177526572708600&ev=PageView&noscript=1"></noscript>
+    <!--End   [ Facebook Pixel Code ]-->
+
+
+    <!--Start [ Google Tracking Code ]-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-89650652-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--End   [ Google Tracking Code ]-->
+
+
+    <!--[if IE]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="page-screen">
+
+<h1 class="conceal">Athelas</h1>
+
+
+
+<!--Start [ header ]-->
+<div class="header">
+    <div class="navbar">
+        <div class="container-fluid sc">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="images/athelas-logo-new.png" style="height:20px;margin-left:20px;margin-top:10px"/></a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="/technology" style="color:gray">Technology</a></li>
+                    <li><a href="/manifesto" style="color:gray">Manifesto</a></li>
+                    <li><a href="/data" style="color:gray">Data</a></li>
+                    <li><a href="/fda" style="color:gray">FDA</a></li>
+                    <li><a href="/contact" style="color:gray">Contact Us</a></li>
+                    <li><span><a href="/startscreen" class="button blue">Get started</a></span></li>
+                </ul>
+            </div>
+        
+        </div>
+    </div>
+</div>
+<!--End   [ header ]-->
+
+
+
+
+
+<!--Start [ layout ]-->
+<div class="layout">
+	
+    
+    <!--Start [ screen-intro ]-->
+    <div class="screen-intro" style="border-bottom: solid #e2e2e2; border-bottom-width: 0.5px;z-index: 0">
+
+        <canvas id="demo-canvas" align="left" style="position:absolute;margin-left:-200px;margin-top:100px;"></canvas>
+    	<div class="container-fluid sc">
+        	<div class="row">
+            	<div class="col-xs-12">
+                	<div class="fs-table">
+                    	<div class="fs-cell">
+                            <div class="home-intro-content" style="font-family:'Avenir';">
+                            	<a href="/" class="introducing-screen-link"><span class="new-label">Announcement</span><strong>Research:</strong> Athelas presenting paper at 2017 MDS Conference</a>
+                                <h2 style="font-size:24px;color:#919191">A simple and rapid</h2>
+                                <h2 style="font-size:24px;margin-top:-20px;color:#aa3e2c"><strong>blood test</strong> for anyone, anywhere.</h2>
+                                <p style="font-size:12px"><strong>A NEW STANDARD IN POINT-OF-CARE BLOOD COUNTING</strong></p>
+                                <div class="button-spacer" style="margin-top:50px">
+                                	<a href="/startscreen" class="button blue">Get started at your clinic</a>
+                                    <a href="/startscreen" class="button blue" style="background-color:gray;margin-left:15px">Learn more</a>
+                                    <a href="https://www.youtube.com/embed/shhOy2OzGIc?autoplay=1" class="button transparent various fancybox.iframe"><span>Watch Video</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <span class="lazyload-image-loader bg-keep-img black">
+            <span class="lazyload" data-original="images/testsdevicesmall.png"></span>
+        </span>
+        
+    </div>
+    <!--End   [ screen-intro ]--> 
+    
+    
+    <!--Start [ how-it-works ]-->
+    <div class="" style="padding-top:10px;padding-bottom:20px;z-index:1000;position:relative;background-color:#fff">
+        <div class="container-fluid sc">
+            <center>
+            <div class="row">
+                <div class="col-xs-12" style="">
+                    <img class="animated fadeInUp" src="images/advisorstext.png" style="height:22px;padding-right:50px;margin-top:10px"/>
+                    <img class="animated fadeInUp" src="images/stanford.png" style="height:20px;padding-right:50px;margin-top:10px"/>
+                    <img class="animated fadeInUp" src="images/ucsf.png" style="height:20px;padding-right:50px;margin-top:10px"/>
+                    <img class="animated fadeInUp" src="images/usc.png" style="height:20px;padding-right:50px;margin-top:10px"/>
+                    <img class="animated fadeInUp" src="images/testsrun.png" style="height:20px;padding-right:50px;margin-top:10px"/>
+                </div>
+            </div>
+            </center>
+        </div>
+        <!--
+    	<div class="container-fluid sc" style="margin-top:50px">
+        	<div class="row">
+            	<div class="col-xs-12">
+                	<h2>How it works:</h2>
+					<div class="how-it-works-media-group">
+                    	<div class="how-it-works-media"><img src="images/howitworks1.png" alt="howitworks1" width="470" height="357"></div>
+                    	<div class="how-it-works-media"><img src="images/howitworks2.png" alt="howitworks2" width="470" height="357"></div>
+                    	<div class="how-it-works-media"><img src="images/howitworks3.png" alt="howitworks3" width="470" height="357"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+    <!--End   [ how-it-works ]-->
+    
+    
+    <!--Start [ why-screen ]-->
+    <div class="why-screen" style="background-color:#000; background-image:url('images/blackbackground.png'); background-position: cover; padding-top:50px">
+    
+    	<div class="container-fluid sc">
+        	<div class="row">
+                <center>
+                    <div style="display: inline-block;height:100px;margin-right:100px"><img class="animated fadeInUp" src="images/fivedollar.png" style="height:28px;padding-right:50px;margin-top:10px"/></div>
+                    <div style="display: inline-block;height:100px;margin-right:100px"><img class="animated fadeInUp" src="images/twominutes.png" style="height:28px;padding-right:50px;margin-top:10px"/></div>
+                    <div style="display: inline-block;height:100px;margin-right:100px"><img class="animated fadeInUp" src="images/pinprick.png" style="height:35px;padding-right:50px;margin-top:10px"/></div>
+                </center>
+            	<div class="col-xs-12">
+                	<div class="why-screen-content clearfix" style="font-family:'Avenir'; margin-top:30px">
+                    	<h2 style="font-size:30px">A Breakthrough in Computer Vision</h2>
+                        <p style="font-size:18px">Athelas uses the novel approach of deep learning to automatically analyze blood cells in seconds. Our algorithms are trained to differentiate cell morphology and pick up on nucleation features.</p>
+                        <p style="font-size:18px">This automation technique lets us perform an array of blood tests on drop samples of blood accurately, rapidly, and for a fraction of existing costs.</p>
+                        <a href="/start" class="button blue animated infinite pulse" style="background-color:gray;margin-top:100px;margin-bottom:50px">Get a demo</a>
+                        <!--
+                        <div class="track-infection-media-group clearfix up-down-animating">
+                            <a href="http://jamanetwork.com/journals/jama/article-abstract/400931">
+                                <span class="track-infection-media-ahabig">
+                                    <span class="lazyload-image-loader bg-keep-img black contain">
+                                        <img src="images/blank.gif" class="lazyload" alt="ahabig" data-original="images/ahabig.png">
+                                        <span class="lazyload" data-original="images/ahabig.png"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            
+                            <a href="http://www.aafp.org/afp/2000/1101/p2053.html">
+                                <span class="track-infection-media-physicianbig">
+                                    <span class="lazyload-image-loader bg-keep-img black contain">
+                                        <img src="images/blank.gif" class="lazyload" alt="physicianbig" data-original="images/physicianbig.png">
+                                        <span class="lazyload" data-original="images/physicianbig.png"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            
+                            <a href="http://www.bloodjournal.org/content/99/10/3517.short">
+                                <span class="track-infection-media-bloodbig">
+                                    <span class="lazyload-image-loader bg-keep-img black contain">
+                                        <img src="images/blank.gif" class="lazyload" alt="bloodbig" data-original="images/bloodbig.png">
+                                        <span class="lazyload" data-original="images/bloodbig.png"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            
+                            <a href="http://www.breastcancer.org/treatment/side_effects/low_white_blood_cell">
+                                <span class="track-infection-media-chemobig">
+                                    <span class="lazyload-image-loader bg-keep-img black contain">
+                                        <img src="images/blank.gif" class="lazyload" alt="chemobig" data-original="images/chemobig.png">
+                                        <span class="lazyload" data-original="images/chemobig.png"></span>
+                                    </span>
+                                </span>
+                            </a>	
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--End   [ why-screen ]-->
+    
+    <!--Start [ why-screen ]-->
+    <div class="why-screen" style="padding:0px; padding-top:50px;background-color: #fff;margin-bottom:0px">
+    
+        <div class="container-fluid sc">
+            <div class="row">
+                <center>
+                    <p style="font-size:30px;font-family:'Avenir';color:gray;margin-bottom:80px;padding-top:100px">How it works</p>
+                    <div style="display: inline-block;height:400px;"><img src="images/home.png" style="height:300px;padding-right:50px;margin-top:10px"/></div>
+                    <div style="display: inline-block;height:400px;"><img src="images/device.png" style="height:300px;padding-right:50px;margin-top:10px"/></div>
+                    <div style="display: inline-block;height:400px;margin-bottom:100px"><img src="images/striporder.png" style="height:300px;padding-right:50px;margin-top:10px"/></div>
+                    <div><a href="/startscreen" class="button blue animated infinite bounce" style="font-size:20px">Get started</a></div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+        <!--Start [ why-screen ]-->
+    <div class="why-screen" style="padding:0px;background-color: #fff;">
+    
+        <div class="container-fluid sc">
+            <div class="row">
+                    <img src="images/deviceandstrip.png" style="float:left;margin-right:80px;width:40%;min-width:400px"/>
+                    <p style="font-size:30px;font-family:'Avenir';color:black;margin-bottom:20px;padding-top:100px;margin-left:20px;margin-right:50px">A smart diagnostic for <strong>every</strong> appointment</p>
+                    <p style="font-size:20px;font-family:'Avenir';color:gray;margin-top:50px;margin-left:20px;margin-right:50px">Save thousands of dollars in long-term care. Catch infections, inflammations, malignancies and more at their earliest with a cheap, benchmarking blood count.</p>
+                    <p style="font-size:20px;font-family:'Avenir';color:gray;margin-top:10px;margin-left:20px;margin-right:50px">Insights in moments for every patient. No more “considering” a blood lab, just take a lightweight one for anyone you want, within minutes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-screen" style="padding:0px;background-color: #fff">
+    
+        <div class="container-fluid sc">
+            <div class="row">
+                    <div style="float:left;margin-right:100px;margin-left:5%;width:50%;min-width:400px">
+                        <p style="font-size:30px;font-family:'Avenir';color:black;margin-bottom:20px;padding-top:100px;margin-left:20px;margin-right:50px">20x faster, 20x cheaper, equally <strong>accurate.</strong></p>
+                        <p style="font-size:20px;font-family:'Avenir';color:gray;margin-top:50px;margin-left:20px;margin-right:50px">We make the basic blood count an order of magnitude better in speed and cost. But most importantly, our test is clinically validated performing at FDA-defined correlation to gold standard counts.</p>
+                        <p style="font-size:20px;font-family:'Avenir';color:gray;margin-top:10px;margin-left:20px;margin-right:50px">Fully HIPAA-compliant and DICOM-adhering, we make your life simple.</p>
+                    </div>
+                    <img src="images/accurate.png" style="margin-right:10px;padding-top:90px"/>
+            </div>
+        </div>
+    </div>
+
+
+     
+    
+    
+
+    
+    
+   
+
+</div>
+<!--End   [ layout ]-->
+
+
+
+
+
+<!--Start [ footer ]-->
+<div class="footer hidden-xs">
+    <div class="container-fluid sc">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul>
+                    <li><a href="/technology">Technology</a></li>
+                    <li><a href="/manifesto">Manifesto</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/fda">FDA</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><span><a href="/startscreen" class="button blue">Get Started</a></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End   [ footer ]-->
+
+
+
+
+
+<script>
+var h = typeof(window.innerHeight) !== "undefined" ? window.innerHeight : document.documentElement.offsetHeight,
+fsJSEle = document.getElementsByClassName("fs");
+
+if(fsJSEle) {
+	for(var iJS = 0; iJS < fsJSEle.length; iJS++) {
+		fsJSEle[iJS].style.height = h + "px";
+	}
+}
+</script> 
+
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/jquery.vide.min.js"></script>
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/script.js"></script>
+<!--[if lte IE 9]><script src="../js/placeholder.js"></script><script>Placeholder.init();</script><![endif]-->
+<!--[if lt IE 9]><script src="../js/respond.js"></script><![endif]-->
+</body>
+</html>

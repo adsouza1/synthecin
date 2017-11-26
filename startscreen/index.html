@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    
+    <title>Athelas</title>
+    
+    <meta name="description" content="In-home blood diagnostic">
+    <meta name="keywords" content="diagnostic, blood, in-home">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!--Start [ Facebook Pixel Code ]-->
+    <script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '177526572708600'); 
+		fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" alt="Facebook Pixel Code" src="https://www.facebook.com/tr?id=177526572708600&ev=PageView&noscript=1"></noscript>
+    <!--End   [ Facebook Pixel Code ]-->
+
+
+    <!--Start [ Google Tracking Code ]-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-89650652-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--End   [ Google Tracking Code ]-->
+    
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+
+
+    <!--[if IE]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="page-startscreen">
+
+<h1 class="conceal">Athelas</h1>
+
+
+
+<!--Start [ header ]-->
+<div class="header">
+    <div class="navbar">
+        <div class="container-fluid sc">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Athelas <span>Screen</span></a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="visible-xs"><a href="/technology">Technology</a></li>
+                    <li class="visible-xs"><a href="/manifesto">Manifesto</a></li>
+                    <li class="visible-xs"><a href="/data">Data</a></li>
+                    <li class="visible-xs"><a href="/fda">FDA</a></li>
+                    <li class="visible-xs"><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        
+        </div>
+    </div>
+</div>
+<!--End   [ header ]-->
+
+
+
+
+
+<!--Start [ layout ]-->
+<div class="layout">
+	
+    
+    <!--Start [ checkout ]-->
+    <div class="checkout">
+    
+    	<div class="container-fluid sc">
+        	<div class="row">
+            	<div class="col-xs-12">
+                	<div class="checkout-content clearfix">
+                        
+                        <form action="charge.php" method="post">
+                        
+                            <h2>Checkout</h2>
+                            
+                            <div class="checkout-heading clearfix">
+                                <h3 class="ptitle" Name= "ptitle">Athelas Monthly at-home Screen (Bay Area)</h3>
+                                <input type ="hidden" Name="ptitle" value="Athelas">
+                                <h3 class="pprice" itemprop="lowPrice" name="pprice">$15/month</h3>
+                                <input type="hidden" Name="pprice" value="$15">
+                                <p class="pdesc" name="pdesc">Available in Bay Area.</p>
+                                <script
+                                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="pk_live_i5SJc7cdxBch4ww2uyVXVTEE"
+                                data-image="../images/deviceprickregion.png"
+                                data-name="Athelas"
+                                data-description="Athelas "
+                                data-amount="1500"
+                                data-billingAddress="true"
+                                data-shippingAddress="true"
+                                data-label="Order">
+                                </script>
+                                <input type="hidden" name="pdesc" value="Athelas Monthly at-home Screen">
+                            </div>
+                            
+                            <p class="pdesc" name="pdesc">After you place the order above, your Athelas Screener will make contact by email within 24 hours to schedule your beta test time.</p>
+                            <img class="img-responsive" src="../images/background.jpg" alt="background">
+                            
+                            
+                            <div class="pcheck hide">
+                                <input type="checkbox" tabindex="3" id="mnthlysub" name="monthlysub" checked>
+                                <label for="monthlysub">&nbsp; Athelas Monthly at-home Screen<span name="sprice">$15/mo</span></label>
+                                <input type="hidden" name="subplan" value="$15">
+                            </div>
+                            
+                        
+                        </form>
+  
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--End   [ checkout ]-->
+    
+    
+     
+    
+    
+
+    
+    
+   
+
+</div>
+<!--End   [ layout ]-->
+
+
+
+
+
+<!--Start [ footer ]-->
+<div class="footer hidden-xs">
+    <div class="container-fluid sc">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul>
+                    <li><a href="/technology">Technology</a></li>
+                    <li><a href="/manifesto">Manifesto</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/fda">FDA</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End   [ footer ]-->
+
+
+
+
+
+<script>
+var h = typeof(window.innerHeight) !== "undefined" ? window.innerHeight : document.documentElement.offsetHeight,
+fsJSEle = document.getElementsByClassName("fs");
+
+if(fsJSEle) {
+	for(var iJS = 0; iJS < fsJSEle.length; iJS++) {
+		fsJSEle[iJS].style.height = h + "px";
+	}
+}
+</script> 
+
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script src="../js/jquery.vide.min.js"></script>
+<script src="../js/jquery.easing-1.3.pack.js"></script>
+<script src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script src="../js/script.js"></script>
+
+
+<!--[if lte IE 9]><script src="../js/placeholder.js"></script><script>Placeholder.init();</script><![endif]-->
+<!--[if lt IE 9]><script src="../js/respond.js"></script><![endif]-->
+</body>
+</html>
